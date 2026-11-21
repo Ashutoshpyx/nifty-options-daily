@@ -1,0 +1,2 @@
+date,spot,vix,vix_pctile,pcr_oi,max_pain,put_wall,call_wall,atm_iv_e1,atm_iv_e2,adx,rsi,ic_score,cal_score,bias_score,smart_score,fii_fut_long_pct
+2026-11-20,25800.6,17.32,79.4,1.673,25500.0,24500.0,26000.0,12.42,14.43,45.1,78.6,3,0,6,-2,34.1
