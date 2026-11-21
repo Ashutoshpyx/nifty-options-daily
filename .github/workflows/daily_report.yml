@@ -5,6 +5,11 @@ on:
     - cron: "30 13 * * 1-5"   # 19:00 IST, after NSE publishes end-of-day files
     - cron: "30 15 * * 1-5"   # 21:00 IST backup run (skips if the report already exists)
   workflow_dispatch:           # run by hand from the Actions tab
+    inputs:
+      force:
+        description: "Rebuild and re-send the email even if the report already exists"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -27,6 +32,9 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Run tests (must pass before anything is published)
         run: python -m unittest discover -s tests -t . -v
+      - name: Refresh NSE holiday calendar (never blocks the report)
+        continue-on-error: true
+        run: python -m src.update_nse_holidays
       - name: Build report
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}   # optional
@@ -34,7 +42,7 @@ jobs:
           GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
-        run: python -m src.build_report
+        run: python -m src.build_report ${{ github.event.inputs.force == 'true' && '--force' || '' }}
       - name: Short brief in the run summary
         run: |
           if [ -f reports/latest.md ]; then cat reports/latest.md >> "$GITHUB_STEP_SUMMARY"; fi
