@@ -1,0 +1,10 @@
+{
+ "years": [
+  2026
+ ],
+ "sources": [
+  "NSE/FAOP/71777 (12 Dec 2025) F&O trading holidays 2026, same 15 weekday dates as NSE/CMTR/71775",
+  "NSE/FAOP/72262 (12 Jan 2026) adds 15 Jan 2026 as an F&O holiday"
+ ],
+ "note": "Settlement holidays (NCL circulars) are not trading holidays and are not listed. Muhurat session Sun 8 Nov 2026 (NSE/FAOP/76940) not modelled. Add a year only after loading its official F&O list plus any later amendments."
+}
