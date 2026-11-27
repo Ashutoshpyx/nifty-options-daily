@@ -1,11 +1,11 @@
-# Nifty options brief - Thu 26 Nov 2026
+# Nifty options brief - Fri 27 Nov 2026
 
-NIFTY 25,884.5 (+0.25%) | VIX 16.84 (at or above 76% of past-year readings, high expected volatility relative to history) | Trend Uptrend, ADX 49 (trend strength)
-Expiry 01 Dec (5d): ATM IV 14.6% (annualised volatility priced near spot) | estimated move to expiry ±441 | straddle 353 | PCR 1.03 (103 open puts per 100 calls, neutral vote in the model)
-Walls (possible support / resistance): put 25000 / call 26000 | max pain 25800 (smallest payout at expiry) | gamma-OI strikes (where many options are sensitive to a price move) 26000, 25900, 25800
-FII futures long 23% | institutional positioning score -3 (bearish)
-IRON CONDOR 5/7 FAVOURABLE | 2:1 RATIO CALENDAR 2/5 AVOID | OUTLOOK Mildly bullish (+2)
-Range strategy review: None | No trade: Event coverage is unverified or a scheduled event falls before expiry. No eligible structure with a positive median gross scenario under the selection rules.
+NIFTY 25,607.2 (-1.07%) | VIX 16.55 (at or above 74% of past-year readings, middle range expected volatility relative to history) | Trend Uptrend, ADX 49 (trend strength)
+Expiry 01 Dec (4d): ATM IV 13.7% (annualised volatility priced near spot) | estimated move to expiry ±366 | straddle 292 | PCR 0.59 (59 open puts per 100 calls, mild bearish vote in the model)
+Walls (possible support / resistance): put 25000 / call 27000 | max pain 25700 (smallest payout at expiry) | gamma-OI strikes (where many options are sensitive to a price move) 25800, 25700, 26000
+FII futures long 22% | institutional positioning score -2 (bearish)
+IRON CONDOR 3/7 SELECTIVE | 2:1 RATIO CALENDAR 1/5 AVOID | OUTLOOK Neutral / range (+0)
+Range strategy review: Iron condor | No trade: Event coverage is unverified or a scheduled event falls before expiry.
 
-Full dashboard: docs/2026-11-26.html
+Full dashboard: docs/2026-11-27.html
 Event coverage unverified. Neither strategy received an event point.
